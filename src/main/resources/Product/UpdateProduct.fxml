@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dnyanyog.product_management.UpdateProductController">
+   <children>
+      <SplitPane dividerPositions="0.3051697530864197" prefHeight="360.0" prefWidth="520.0">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #1E3A5F;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="155.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Product.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="10.0" prefHeight="27.0" prefWidth="193.0" text="Update Product" textAlignment="CENTER" textFill="#1E3A5F" underline="true">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="51.0" text=" Product name :" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="searchProduct" layoutX="134.0" layoutY="50.0" prefWidth="200.0" style="-fx-border-color: #1E3A5F; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <Label layoutX="41.0" layoutY="131.0" prefHeight="20.0" prefWidth="82.0" text="Product id:" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="errorMessage" layoutX="131.0" layoutY="339.0" prefHeight="15.0" prefWidth="200.0" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="193.0" layoutY="86.0" mnemonicParsing="false" onAction="#searchProduct" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1E3A5F; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Search">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="24.0" layoutY="305.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #1E3A5F; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Back">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="productId" layoutX="132.0" layoutY="128.0" prefWidth="200.0" style="-fx-border-color: #1E3A5F; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <Label layoutX="17.0" layoutY="172.0" prefHeight="20.0" prefWidth="114.0" text="Product Name:" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="217.0" prefHeight="20.0" prefWidth="104.0" text="Product Price:" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="4.0" layoutY="268.0" prefHeight="20.0" prefWidth="142.0" text="Product Quantity:" textFill="#1E3A5F">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="productName" layoutX="132.0" layoutY="168.0" prefWidth="200.0" style="-fx-border-color: #1E3A5F; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <TextField fx:id="productQuantity" layoutX="132.0" layoutY="213.0" prefWidth="200.0" style="-fx-border-color: #1E3A5F; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <TextField fx:id="productPrice" layoutX="131.0" layoutY="264.0" prefWidth="200.0" style="-fx-border-color: #1E3A5F; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                  <Button layoutX="130.0" layoutY="305.0" mnemonicParsing="false" onAction="#updateProduct" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #1E3A5F; -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Update Product">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
